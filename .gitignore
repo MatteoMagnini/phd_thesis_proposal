@@ -1,3 +1,9 @@
+phd-thesis-proposal.pdf
+
+.github/
+.idea/
+
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
