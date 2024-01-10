@@ -1,6 +1,7 @@
 % !TeX spellcheck = en_GB
 \documentclass[]{scrartcl}
 \usepackage{phd-thesis-proposal}
+\usepackage{biblatex}
 
 %opening
 \title{
@@ -21,6 +22,46 @@
     \section{What has been done}
     \label{sec:done}
 
+    During the first year of my Ph.D., I have studied the scientific literature on neuro-symbolic (NeSy) artificial intelligence (AI) approaches.
+    %
+    Because NeSy is a broad research area, my focus has been on the sub-fields of symbolic knowledge extraction (SKE) and symbolic knowledge injection (SKI).
+    %
+    SKE consists of \emph{extracting} symbolic knowledge (i.e., human understandable such as logic rules) from sub-symbolic predictors (e.g., neural networks).
+    %
+    SKI consists of \emph{injecting} symbolic knowledge into sub-symbolic predictors in order to guide their learning process (i.e., be compliant with the knowledge) and ultimately improve their performance.
+    %
+    The study of a huge amount of articles about SKE and SKI will result in a scientific literature review paper on NeSy approaches for AI (accepted on ACM transactions, will soon be published).
+
+    After that, I have developed a couple of SKI approaches supporting the injection of stratified Datalog with negation into neural networks that use different strategies (KINS~\cite{kins-cilc2022} and KILL~\cite{kill-woa2022}).
+    %
+    Both algorithms have been implemented in Python and available on GitHub\footnote{\label{foot:psyki}\url{https://github.com/psykei/psyki-python}}.
+    %
+
+    At the same time, I have developed a platform for symbolic knowledge injection into sub-symbolic predictors (PSyKI)~\cite{psyki-extraamas2022}$^{\ref{foot:psyki}}$.
+    %
+    PSyKI is a Python library that allows the injection of symbolic knowledge into neural networks.
+    %
+    Currently, PSyKI supports 3 SKI algorithms (KBANN~\cite{TowellAaai1990}, KINS, and KILL) and a set of quality of service (QoS) metrics to evaluate the performance of the algorithms~\cite{skiqos-jaamas37}.
+    %
+    Along with this library, I have also implemented PSyKE~\cite{psyke-woa2021} in Python, available on GitHub\footnote{\label{foot:psyke}\url{https://github.com/psykei/psyke-python}}.
+
+    Then, I have studied, designed and implemented AI based software systems that exploit knowledge injection / extraction techniques.
+    %
+    The first one is a recommender system for nutritional recipes that exploits symbolic knowledge extraction from neural networks in order to recommend recipes following both user's preferences and nutritional constraints~\cite{skerecommender-cmbp235}.
+    %
+    Then, I have co-written a protocol for multi-agent based explanations~\cite{explanationprotocol-extraamas2023}.
+    %
+    Also, I have explored the recent advances in large language models (LLMs) and their potential for AI applications (one paper submitted, one paper in preparation).
+    %
+    The first work consists of a comparative analysis of LLMs for healthcare chatbots in the context of hypertension.
+    %
+    The second work consists of a study on how to exploit LLMs as oracles for instantiating ontologies with domain-specific knowledge.
+
+    Finally, I have been involved in the development of a framework for fairness-aware AI systems.
+    %
+    Currently I have two papers under review about this topic, one of this takles the problem of intersectional fairness.
+
+    Along with the research activities, I have also been involved in teaching activities, Ph.D. courses, conferences and one summer school.
 
 
     \subsection{Scientific publications}
@@ -62,8 +103,8 @@
     I have developed and I am currently maintaining the following research technologies:
     %
     \begin{itemize}
-        \item \textbf{PSyKI}~\cite{psyki-extraamas2022}: a platform for symbolic knowledge injection into sub-symbolic predictors available at \url{https://github.com/psykei/psyki-python};
-        \item \textbf{PSyKE}~\cite{psyke-woa2021}: a knowledge injection technique based on neural network structuring available at \url{https://github.com/psykei/psyke-python};
+        \item \textbf{PSyKI}~\cite{psyki-extraamas2022}: a platform for symbolic knowledge injection into sub-symbolic predictors available at~$^{\ref{foot:psyki}}$;
+        \item \textbf{PSyKE}~\cite{psyke-woa2021}: a knowledge injection technique based on neural network structuring available at~$^{\ref{foot:psyke}}$.
     \end{itemize}
 
     \subsection{Teaching}
@@ -75,9 +116,40 @@
         \item teaching assistant for the curse ``Distributed System'' (A.Y. 2023/2024) for the Master's Degree in Computer Science and Engineering (24 hours);
         \item teacher at professional education course (May 2023) for BPER Data Analytics, BBS (8 hours);
         \item teaching assistant for the curse ``Fondamenti di Informatica'' (A.Y. 2022/2023) for the Bachelor's Degree in Electronics Engineering and Biomedical Engineering (35 hours);
-        \item teaching assistant for the curse ``Sistemi Distribuiti'' (A.Y. 2022/2023) for the Master's Degree in Computer Science and Engineering (24 hours);
+        \item teaching assistant for the curse ``Sistemi Distribuiti'' (A.Y. 2022/2023) for the Master's Degree in Computer Science and Engineering (24 hours).
     \end{itemize}
 
+    \subsection{Ph.D. courses}
+    \label{sec:done:courses}
+    %
+    I have attended the following Ph.D. courses:
+    %
+    \begin{itemize}
+        \item ``Comparative Introduction to Deep Learning Frameworks: TensorFlow, PyTorch and Jax'' (Nov. 2022, 1 CFU);
+        \item ``Low-rank Approaches for Data Analysis: Models, Numerical Methods and Applications'' (Jan. 2023, 2 CFU);
+        \item ``How to Write and Publish a Research Paper in Computer Science and Engineering'' ( May 2023, 2 CFU);
+        \item ``Devops meets scientific research'' (July 2023, 4 CFU);
+        \item ``Introduction to RL'' (Oct. 2023, 3 CFU).
+    \end{itemize}
+
+    \subsection{Conferences}
+    \label{sec:done:conferences}
+    %
+    I have physically attended the following conferences:
+    %
+    \begin{itemize}
+        \item \textbf{AIxIA 2022}: 21st International Conference of the Italian Association for Artificial Intelligence (Nov. 2022, Udine, Italy);
+        \item \textbf{KR 2023}: 20th International Conference on Principles of Knowledge Representation and Reasoning (Sep. 2023, Rhodes, Greece).
+    \end{itemize}
+
+    \subsection{Summer schools}
+    \label{sec:done:summerschools}
+    %
+    I have physically attended the following summer schools:
+    %
+    \begin{itemize}
+        \item \textbf{DeepLearn2023} 10th International Gran Canaria School on Deep Learning (July 2023, Gran Canaria, Spain).
+    \end{itemize}
 
     \section{Plan for the remaining years}
     \label{sec:todo}
@@ -91,11 +163,10 @@
     Integreat develops theories, methods, models and algorithms that integrate general and domain-specific knowledge with data.
     %
 
-
-
     
     %\bibliographystyle{my-bib-style}
     \bibliographystyle{plain}
     \bibliography{publications}
+    
     
 \end{document}
