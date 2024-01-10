@@ -1,13 +1,12 @@
 % !TeX spellcheck = en_GB
 \documentclass[]{scrartcl}
 \usepackage{phd-thesis-proposal}
-\usepackage{ijcai24}
 
 %opening
 \title{
     Synergizing Symbolic and Sub-symbolic AI: ...
 }
-\subtitle{Thesis proposal, Computer Science and Engineering Ph.D. course, cycle XXXVIII}
+\subtitle{Thesis proposal, Computer Science and Engineering Ph.D. course, cycle 38}
 \author{Matteo Magnini}
 \date{A.A. 2023/2024}
 
@@ -21,6 +20,11 @@
     
     \section{What has been done}
     \label{sec:done}
+
+
+
+    \subsection{Scientific publications}
+    \label{sec:done:publications}
     %
     During the first year of my Ph.D., I have done several activities including scientific publications, developing research technologies, and teaching.
     %
@@ -28,38 +32,70 @@
     %
     \begin{itemize}
         \item ``On the Design of PSyKI: a Platform for Symbolic Knowledge Injection into Sub-Symbolic Predictors''~\cite{psyki-extraamas2022}
-        \item ``KINS: Knowledge Injection via Network Structuring''\cite{kins-cilc2022}
-        \item ``A view to a KILL: Knowledge Injection via Lambda Layer''\cite{kill-woa2022}
-        \item ``Bridging Symbolic and Sub-Symbolic AI: Towards Cooperative Transfer Learning in Multi-Agent Systems''\cite{ctl-aixia2022}
-        \item ``Symbolic Knowledge Extraction for Explainable Nutritional Recommenders''\cite{skerecommender-cmbp235}
-        \item ``Knowledge injection of Datalog rules via Neural Network Structuring with KINS''\cite{kins-jlc2023}
-        \item ``Symbolic Knowledge Injection meets Intelligent Agents: QoS metrics and experiments''\cite{skiqos-jaamas37}
-        \item ``A General-Purpose Protocol for Multi-Agent based Explanations''\cite{explanationprotocol-extraamas2023}
+        \item ``KINS: Knowledge Injection via Network Structuring''~\cite{kins-cilc2022}
+        \item ``A view to a KILL: Knowledge Injection via Lambda Layer''~\cite{kill-woa2022}
+        \item ``Bridging Symbolic and Sub-Symbolic AI: Towards Cooperative Transfer Learning in Multi-Agent Systems''~\cite{ctl-aixia2022}
+        \item ``Symbolic Knowledge Extraction for Explainable Nutritional Recommenders''~\cite{skerecommender-cmbp235}
+        \item ``Knowledge injection of Datalog rules via Neural Network Structuring with KINS''~\cite{kins-jlc2023}
+        \item ``Symbolic Knowledge Injection meets Intelligent Agents: QoS metrics and experiments''~\cite{skiqos-jaamas37}
+        \item ``A General-Purpose Protocol for Multi-Agent based Explanations''~\cite{explanationprotocol-extraamas2023}
     \end{itemize}
     %
     Already accepted papers waiting for publication:
     %
     \begin{itemize}
-        \item ``Symbolic Knowledge Extraction and Injection with Sub-symbolic Predictors: a Systematic Literature Review''
+        \item ``Symbolic Knowledge Extraction and Injection with Sub-symbolic Predictors: a Systematic Literature Review'', ACM Computing Surveys (CSUR).
     \end{itemize}
     %
-    I have also submitted the following papers:
+    I have also submitted / will submit the following papers:
     %
     \begin{itemize}
-        \item ``LLM-based Solutions for Healthcare Chatbots: a Comparative Analysis''
-        \item ``Addressing Intersectional Fairness: a Practical Approach with FaUCI''
-        \item ``Analysing Fairness in Neural Networks under Constraint Injection with FaUCI''
+        \item ``LLM-based Solutions for Healthcare Chatbots: a Comparative Analysis'', submitted at the 3rd International Workshop on Telemedicine and E-Health Evolution in the New Era Of Social Distancing (TELMED 2024);
+        \item ``Addressing Intersectional Fairness: a Practical Approach with FaUCI'', submitted at the 33rd International Joint Conference on Artificial Intelligence (IJCAI 2024);
+        \item ``Analysing Fairness in Neural Networks under Constraint Injection with FaUCI'' submitted at the 33rd International Joint Conference on Artificial Intelligence (IJCAI 2024);
+        \item ``Large language models as oracles for instantiating ontologies with domain-specific knowledge'' will be submitted soon probably at the Journal of Web Semantics or at the Knowledge-Based Systems journal.
     \end{itemize}
 
+    \subsection{Research technologies}
+    \label{sec:done:technologies}
+    %
+    I have developed and I am currently maintaining the following research technologies:
+    %
+    \begin{itemize}
+        \item \textbf{PSyKI}~\cite{psyki-extraamas2022}: a platform for symbolic knowledge injection into sub-symbolic predictors available at \url{https://github.com/psykei/psyki-python};
+        \item \textbf{PSyKE}~\cite{psyke-woa2021}: a knowledge injection technique based on neural network structuring available at \url{https://github.com/psykei/psyke-python};
+    \end{itemize}
+
+    \subsection{Teaching}
+    \label{sec:done:teaching}
+    %
+    I have been teaching the following courses:
+    %
+    \begin{itemize}
+        \item teaching assistant for the curse ``Distributed System'' (A.Y. 2023/2024) for the Master's Degree in Computer Science and Engineering (24 hours);
+        \item teacher at professional education course (May 2023) for BPER Data Analytics, BBS (8 hours);
+        \item teaching assistant for the curse ``Fondamenti di Informatica'' (A.Y. 2022/2023) for the Bachelor's Degree in Electronics Engineering and Biomedical Engineering (35 hours);
+        \item teaching assistant for the curse ``Sistemi Distribuiti'' (A.Y. 2022/2023) for the Master's Degree in Computer Science and Engineering (24 hours);
+    \end{itemize}
 
 
     \section{Plan for the remaining years}
     \label{sec:todo}
+    %
+    From March to June 2024, I will spend a period abroad at the University of Oslo under the supervision of Prof. Ana Ozaki.
+    %
+    During this period, I will work on neuro-symbolic artificial intelligence in the context of the \href{https://www.integreat.no/index.html}{Integreat} project.
+    %
+    More in detail, the project will make machine learning more sustainable, accurate, trustworthy, and ethical.
+    %
+    Integreat develops theories, methods, models and algorithms that integrate general and domain-specific knowledge with data.
+    %
+
+
 
     
     %\bibliographystyle{my-bib-style}
     \bibliographystyle{plain}
     \bibliography{publications}
-    %\bibliography{phd-thesis-proposal}
     
 \end{document}
