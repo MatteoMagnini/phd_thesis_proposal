@@ -1,0 +1,32 @@
+name: Build LaTeX and deploy on GitHub Releases
+on:
+  push:
+    tags: '*'
+    branches-ignore:
+      - 'autodelivery**'
+      - 'bump-**'
+      - 'renovate/**'
+    paths-ignore:
+      - 'README.md'
+      - 'CHANGELOG.md'
+      - 'LICENSE'
+      - 'renovate.json'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  Setup-Compile-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: DanySK/compile-and-publish-all-latex@1.0.67
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # All the following parameters are optional, and these are their default values
+          diff-enable: false
+          diff-files: |
+            *.tex
+          diff-lightweight-tags: false
+          diff-tag-regex: |
+            .*
+          publish-enable: true
